@@ -1,12 +1,137 @@
 <mvc:View controllerName="DemoUXapp.controller.MainNavigation.MainPage"
   height="100%"
   xmlns:mvc="sap.ui.core.mvc"
-  xmlns:core="sap.ui.core"
-  xmlns="sap.m">
-  <Page class="sapUiContentPadding"
-    title="Home">
-    <content>
-      <!-- Place content here-->
-    </content>
-  </Page>
+  xmlns="sap.uxap"
+  xmlns:layout="sap.ui.layout"
+  xmlns:m="sap.m"
+  xmlns:f="sap.f"
+  xmlns:goals="sap.uxap.sample.SharedBlocks.goals"
+  xmlns:personal="sap.uxap.sample.SharedBlocks.personal">
+
+  <ObjectPageLayout id="ObjectPageLayout"
+    upperCaseAnchorBar="false">
+    <headerTitle>
+      <ObjectPageHeader id="headerForTest"
+        objectTitle="Object name"
+        showTitleSelector="false"
+        titleSelectorPress="handleTitleSelectorPress"
+        showMarkers="false"
+        markFavorite=""
+        markLocked=""
+        markFlagged=""
+        markLockedPress=""
+        objectSubtitle="Object's technical name"
+        titleSelectorTooltip="Object name">
+        <actions>
+          <ObjectPageHeaderActionButton icon=""
+            text="Object Preview"
+            importance="Low"
+            tooltip="Object Preview"
+            hideText="false"
+            type="Transparent" />
+          <ObjectPageHeaderActionButton icon="sap-icon://action-settings"
+            text="settings"
+            importance="Low"
+            tooltip="action-settings" />
+          <ObjectPageHeaderActionButton icon="sap-icon://edit"
+            text="edit"
+            importance="Medium"
+            tooltip="edit" />
+          <ObjectPageHeaderActionButton icon="sap-icon://save"
+            text="save"
+            visible="false"
+            tooltip="save" />
+          <ObjectPageHeaderActionButton icon="sap-icon://refresh"
+            text="{buttons>/text}"
+            tooltip="refresh" />
+
+        </actions>
+
+      </ObjectPageHeader>
+    </headerTitle>
+    <headerContent>
+
+
+    </headerContent>
+    <sections>
+      <ObjectPageSection titleUppercase="false">
+        <subSections>
+          <ObjectPageSubSection mode="Expanded"
+            title="Section 1">
+            <blocks>
+              <m:Text text="Description..." />
+            </blocks>
+          </ObjectPageSubSection>
+        </subSections>
+      </ObjectPageSection>
+
+      <ObjectPageSection titleUppercase="false">
+        <subSections>
+          <ObjectPageSubSection mode="Expanded"
+            title="Section 2">
+            <blocks>
+              <m:Text text="Description..." />
+            </blocks>
+          </ObjectPageSubSection>
+        </subSections>
+      </ObjectPageSection>
+
+      <ObjectPageSection titleUppercase="false">
+        <subSections>
+          <ObjectPageSubSection mode="Expanded"
+            title="Section 3">
+            <blocks>
+              <m:Text text="Description..." />
+            </blocks>
+          </ObjectPageSubSection>
+        </subSections>
+      </ObjectPageSection>
+
+      <ObjectPageSection titleUppercase="false">
+        <subSections>
+          <ObjectPageSubSection mode="Expanded"
+            title="Section 4">
+            <blocks>
+              <m:Text text="Description..." />
+            </blocks>
+          </ObjectPageSubSection>
+        </subSections>
+      </ObjectPageSection>
+
+      <ObjectPageSection titleUppercase="false">
+        <subSections>
+          <ObjectPageSubSection mode="Expanded"
+            title="Section 5">
+            <blocks>
+              <m:Text text="Description..." />
+            </blocks>
+          </ObjectPageSubSection>
+        </subSections>
+      </ObjectPageSection>
+
+      <ObjectPageSection titleUppercase="false">
+        <subSections>
+          <ObjectPageSubSection mode="Expanded"
+            title="Section 6">
+            <blocks>
+              <m:Text text="Description..." />
+            </blocks>
+          </ObjectPageSubSection>
+        </subSections>
+      </ObjectPageSection>
+
+      <ObjectPageSection titleUppercase="false">
+        <subSections>
+          <ObjectPageSubSection mode="Expanded"
+            title="Section 7">
+            <blocks>
+              <m:Text text="Description..." />
+            </blocks>
+          </ObjectPageSubSection>
+        </subSections>
+      </ObjectPageSection>
+
+    </sections>
+  </ObjectPageLayout>
+
 </mvc:View>
